@@ -33,25 +33,25 @@ int main() {
     cout << fixed << setprecision(2);
     // Color 1
     Color c1;
-    c1.setGPA(2.33);
-    c1.setName("Craig");
-    c1.setCourseLoad(15);
+    c1.setRed(255);
+    c1.setGreen(0);
+    c1.setBlue(0);
     c1.print();
     print(c1);
 
     // Color 2
     Color c2;
-    c2.setGPA(3.82);
-    c2.setName("Janice");
-    c2.setCourseLoad(14);
+    c2.setRed(0);
+    c2.setGreen(255);
+    c2.setBlue(0);
     c2.print();
     print(c2);
     
-    // student 1
+    // Color 3
     Color c3;
-    c3.setGPA(3.82);
-    c3.setName("Janice");
-    c3.setCourseLoad(14);
+    c3.setRed(0);
+    c3.setGreen(0);
+    c3.setBlue(255);
     c3.print();
     print(c2);
 
@@ -59,6 +59,7 @@ int main() {
 }
 
 void print(Color c) {
-    cout << s.getName() << " (" << s.getGPA() << ", " 
-         << s.getCourseLoad() << " credits)\n\n";
+    cout << "RGB (" << c.getRed() << ", "
+         << c.getGreen() << ", " 
+         << c.getBlue() << ")\n\n";
 }
