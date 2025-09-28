@@ -5,7 +5,8 @@
 using namespace std;
 
 const int W15 = 15;
-class Student {
+
+class Color {
 private:
     int red, green, blue;
 
@@ -30,26 +31,34 @@ void print(Color);
 
 int main() {
     cout << fixed << setprecision(2);
-    // student 1
-    Student craig;
-    craig.setGPA(2.33);
-    craig.setName("Craig");
-    craig.setCourseLoad(15);
-    craig.print();
-    print(craig);
+    // Color 1
+    Color c1;
+    c1.setGPA(2.33);
+    c1.setName("Craig");
+    c1.setCourseLoad(15);
+    c1.print();
+    print(c1);
 
-    // student 2
-    Student janice;
-    janice.setGPA(3.82);
-    janice.setName("Janice");
-    janice.setCourseLoad(14);
-    janice.print();
-    print(janice);
+    // Color 2
+    Color c2;
+    c2.setGPA(3.82);
+    c2.setName("Janice");
+    c2.setCourseLoad(14);
+    c2.print();
+    print(c2);
     
+    // student 1
+    Color c3;
+    c3.setGPA(3.82);
+    c3.setName("Janice");
+    c3.setCourseLoad(14);
+    c3.print();
+    print(c2);
+
     return 0;
 }
 
-void print(Student s) {
+void print(Color c) {
     cout << s.getName() << " (" << s.getGPA() << ", " 
          << s.getCourseLoad() << " credits)\n\n";
 }
